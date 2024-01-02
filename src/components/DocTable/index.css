@@ -1,0 +1,31 @@
+/* 整个表格的样式 */
+.doc-table table {
+    border: 1px solid #f0f0f0;
+}
+[data-theme='dark'] .doc-table table {
+    border-collapse: collapse;
+    background-color: #2c2c2c; /* 表格背景颜色 */
+    color: #ffffff; /* 文字颜色 */
+    border-color: #606770;
+}
+[data-theme='dark'] .doc-table thead th{
+    color: #fff;
+}
+.doc-table thead .ant-table-cell::before {
+    opacity: 0;
+    transition: none !important;
+}
+/* 表头的样式 */
+[data-theme='dark'] .doc-table th, [data-theme='dark'] .doc-table td {
+    background-color: #1b1b1d !important;/* 表头背景颜色 */
+    transition: none !important;
+}
+/* 表格行的样式 */
+[data-theme='dark'] .doc-table tr td{
+    border-color: #606770;
+}
+[data-theme='light'] .doc-table td {
+    background-color: #fff;
+}
+
+
